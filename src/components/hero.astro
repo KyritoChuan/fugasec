@@ -1,57 +1,64 @@
 ---
-import { Picture } from "astro:assets";
-import heroImage from "assets/hero.png";
+import { Picture, Image } from "astro:assets";
+import heroImage from "assets/hero-dashboard.png";
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon/components";
+
+import "./hero.css";
 ---
 
-<main
-  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
-  <div class="py-6 md:order-1 hidden md:block">
-    <Picture
-      src={heroImage}
-      alt="Astronaut in the air"
-      widths={[200, 400, 600]}
-      sizes="(max-width: 800px) 100vw, 620px"
-      loading="eager"
-      format="avif"
-    />
-  </div>
-  <div>
-    <h1 class="text-5xl lg:text-5xl xl:text-6xl font-bold lg:tracking-tight">
-      Nuestra experiencia y eficacia: Tu bienestar y seguridad.
-    </h1>
-    <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      Fugasec es un servicio profesional de detección de fugas y gasfitería
-      general. <br />
-      Detección de fuga de agua. <br />
-      Detección de gas. <br />
-      Gasfitería en general.
-      <a href="https://wa.me/+56941101622?text=MESSAGE" target="_blank"
-        >WhatsApp</a
-      >
-    </p>
-    <div class="mt-6 flex flex-col sm:flex-row gap-3">
-      <Link
-        href="#"
-        href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
-        target="_blank"
-        class="flex gap-1 items-center justify-center"
-        rel="noopener">
-        <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />
+<section>
+  <div class="hero-colour">
+    <div
+      class="flex h-auto sm:h-[500px] py-16 lg:max-w-[1366px] lg:mr-auto lg:ml-auto lg:gap-8 lg:items-center px-4 lg:px-16"
+    >
+      <div class="w-full lg:w-[50%]">
+        <!-- 1e415b -->
+        <h1
+          class="text-[#FFF] text-4xl lg:text-4xl 2xl:text-5xl font-bold lg:tracking-tight"
+        >
+          Nuestra experiencia y eficacia: Tu bienestar y seguridad.
+        </h1>
+        <!-- text-slate-600 -->
+        <p class="text-lg mt-4 text-[#FFF] max-w-xl">
+          Fugasec es un servicio profesional de detección de fugas y gasfitería
+          general. <br />
+          Detección de fuga de agua. <br />
+          Detección de gas. <br />
+          Gasfitería en general.
+        </p>
+        <div class="mt-6 flex flex-col sm:flex-row gap-3">
+          <Link
+            href="#"
+            href="https://wa.me/+56941101622?text=Hola buen día, hablo con respecto a una cotización de gasfitería o fuga, ¿Me podría ayudar?"
+            target="_blank"
+            class="button-colour flex gap-1 items-center justify-center"
+            rel="noopener"
+          >
+            <Icon class="text-white w-4 h-4" name="bx:bxl-whatsapp" />
+            Enviar Mensaje
+          </Link>
+          <Link
+            size="lg"
+            style="outline"
+            rel="noopener"
+            href="tel:+56964536012"
+            class="flex gap-1 items-center justify-center"
+            target="_blank"
+          >
+            Llamar a +569 82412515
+          </Link>
+        </div>
+      </div>
 
-        Download for Free
-      </Link>
-      <Link
-        size="lg"
-        style="outline"
-        rel="noopener"
-        href="https://github.com/surjithctly/astroship"
-        class="flex gap-1 items-center justify-center"
-        target="_blank">
-        <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
-        GitHub Repo
-      </Link>
+      <div class="hidden lg:flex lg:justify-end xl:justify-center lg:w-[50%]">
+        <Image
+          class={"top-20 lg:right-14 xl:right-20 w-[550px] pt-8"}
+          src={heroImage}
+          alt="Astronaut in the air"
+          loading="lazy"
+        />
+      </div>
     </div>
   </div>
-</main>
+</section>

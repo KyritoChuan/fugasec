@@ -11,6 +11,7 @@ module.exports = {
           "Inter",
           ...defaultTheme.fontFamily.sans,
         ],
+        nunitosans: ['Nunito Sans', ...defaultTheme.fontFamily.sans],
       },
     },
   },

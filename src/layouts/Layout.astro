@@ -2,8 +2,8 @@
 import { SEO } from "astro-seo";
 import Footer from "@components/footer.astro";
 import Navbar from "@components/navbar/navbar.astro";
-import "@fontsource-variable/inter/index.css";
-import "@fontsource-variable/bricolage-grotesque";
+
+import "./layout.css";
 
 export interface Props {
   title: string;
@@ -54,7 +54,10 @@ const makeTitle = title
       }}
     />
   </head>
-  <body class="bg-[#fdf3f2]">
+  <!-- bg-[#fdf3f2] -->
+  <!-- #e3edf7 -->
+  <!-- f6f9fc -->
+  <body class="bg-[#f6f9fc] font-nunitosans">
     <Navbar />
     <slot />
     <Footer />
