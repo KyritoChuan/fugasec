@@ -39,11 +39,12 @@ const menuitems = [
 ];
 ---
 
-<!-- sticky top-0 z-10 bg-white -->
+<!-- sticky top-0 z-10 bg-white --><!--  23262f -->
 <div
   class:list={[
-    "sticky top-0 z-10 py-[1px] bg-white w-full px-8 border-b border-[#e6ebf4]",
-  ]}>
+    "sticky top-0 z-10 py-[1px] px-5 sm:pl-[104px] lg:pr-[104px] bg-[#f6f9fc] w-full border-b border-[#e6ebf4]",
+  ]}
+>
   <header>
     <div class="flex flex-col lg:flex-row justify-between items-center my-4">
       <Astronav>
@@ -53,8 +54,8 @@ const menuitems = [
               class="text-slate-500">ship</span
             >
           </a>
-          <div class="block lg:hidden">
-            <MenuIcon class="w-4 h-4 text-gray-800" />
+          <div class="flex justify-center lg:hidden">
+            <MenuIcon class="w-4 h-4 text-gray-600" />
           </div>
         </div>
         <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
@@ -72,9 +73,12 @@ const menuitems = [
 
                   {!item.children && (
                     <li>
+                      {/* text-gray-600 hover:text-gray-900 */}
+                      {/* text-white hover:text-zinc-300 */}
                       <a
                         href={item.path}
-                        class="flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900">
+                        class="flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900"
+                      >
                         <span> {item.title}</span>
                         {item.badge && (
                           <span class="ml-1 px-2 py-0.5 text-[10px] animate-pulse font-semibold uppercase text-white bg-indigo-600 rounded-full">
