@@ -1,0 +1,5 @@
+.text-gradient-green {
+    background-image: linear-gradient(104deg, #93F9B9 0%, #4ca48e 25%, #1D976C 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

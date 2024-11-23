@@ -7,78 +7,58 @@ import { Icon } from "astro-icon/components";
 import "./hero.css";
 ---
 
-<main
-  class="flex hero-colour h-auto sm:h-[500px] px-4 sm:px-[104px] place-items-center pt-16 md:pt-12 pb-8 md:pb-24"
->
-  <div class="w-full lg:w-[50%]">
-    <!-- 1e415b -->
-    <h1
-      class="text-[#FFF] text-4xl lg:text-4xl 2xl:text-5xl font-bold lg:tracking-tight"
+<section>
+  <div class="hero-colour">
+    <div
+      class="flex h-auto sm:h-[500px] py-16 lg:max-w-[1366px] lg:mr-auto lg:ml-auto lg:gap-8 lg:items-center px-4 lg:px-16"
     >
-      Nuestra experiencia y eficacia: Tu bienestar y seguridad.
-    </h1>
-    <!-- text-slate-600 -->
-    <p class="text-lg mt-4 text-[#FFF] max-w-xl">
-      Fugasec es un servicio profesional de detección de fugas y gasfitería
-      general. <br />
-      Detección de fuga de agua. <br />
-      Detección de gas. <br />
-      Gasfitería en general.
-    </p>
-    <div class="mt-6 flex flex-col sm:flex-row gap-3">
-      <Link
-        href="#"
-        href="https://wa.me/+56941101622?text=Hola buen día, hablo con respecto a una cotización de gasfitería o fuga, ¿Me podría ayudar?"
-        target="_blank"
-        class="button-colour flex gap-1 items-center justify-center"
-        rel="noopener"
-      >
-        <Icon class="text-white w-4 h-4" name="bx:bxl-whatsapp" />
-        Enviar Mensaje
-      </Link>
-      <Link
-        size="lg"
-        style="outline"
-        rel="noopener"
-        href="tel:+56964536012"
-        class="flex gap-1 items-center justify-center"
-        target="_blank"
-      >
-        Llamar a +569 82412515
-      </Link>
+      <div class="w-full lg:w-[50%]">
+        <!-- 1e415b -->
+        <h1
+          class="text-[#FFF] text-4xl lg:text-4xl 2xl:text-5xl font-bold lg:tracking-tight"
+        >
+          Nuestra experiencia y eficacia: Tu bienestar y seguridad.
+        </h1>
+        <!-- text-slate-600 -->
+        <p class="text-lg mt-4 text-[#FFF] max-w-xl">
+          Fugasec es un servicio profesional de detección de fugas y gasfitería
+          general. <br />
+          Detección de fuga de agua. <br />
+          Detección de gas. <br />
+          Gasfitería en general.
+        </p>
+        <div class="mt-6 flex flex-col sm:flex-row gap-3">
+          <Link
+            href="#"
+            href="https://wa.me/+56941101622?text=Hola buen día, hablo con respecto a una cotización de gasfitería o fuga, ¿Me podría ayudar?"
+            target="_blank"
+            class="button-colour flex gap-1 items-center justify-center"
+            rel="noopener"
+          >
+            <Icon class="text-white w-4 h-4" name="bx:bxl-whatsapp" />
+            Enviar Mensaje
+          </Link>
+          <Link
+            size="lg"
+            style="outline"
+            rel="noopener"
+            href="tel:+56964536012"
+            class="flex gap-1 items-center justify-center"
+            target="_blank"
+          >
+            Llamar a +569 82412515
+          </Link>
+        </div>
+      </div>
+
+      <div class="hidden lg:flex lg:justify-end xl:justify-center lg:w-[50%]">
+        <Image
+          class={"top-20 lg:right-14 xl:right-20 w-[550px] pt-8"}
+          src={heroImage}
+          alt="Astronaut in the air"
+          loading="lazy"
+        />
+      </div>
     </div>
   </div>
-
-  <div class="hidden lg:flex lg:justify-end xl:justify-center lg:w-[50%]">
-    <Image
-      class={"top-20 lg:right-14 xl:right-20 w-[550px] pt-8"}
-      src={heroImage}
-      alt="Astronaut in the air"
-      loading="lazy"
-    />
-
-    <!-- <div
-    class="flex items-end bg-cover h-[402px] bg-center lg:w-[36%] 2md:w-[45%] absolute z-20"
-    style="
-                  background-image: url('https://staticresourcesfiles.blob.core.windows.net/content/seg/static/5736412179825017-bice-hero-desktop.webp');
-                "
-  >
-  </div> -->
-    <!-- <div class="hidden lg:block">
-    <Image
-      class={"absolute top-20 lg:right-14 xl:right-20 w-[550px]"}
-      src={heroImage}
-      alt="Astronaut in the air"
-      loading="lazy"
-    />
-
-    <Picture
-      src={heroImage}
-      alt="Astronaut in the air"
-      widths={[200, 400, 600]}
-      sizes="(max-width: 800px) 100vw, 620px"
-      loading="eager"
-      format="avif"
-    /> -->
-  </div>
-</main>
+</section>

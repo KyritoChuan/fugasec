@@ -1,5 +1,7 @@
 .hero-colour {
-    background-image: linear-gradient(104deg, #34A4FF 2.49%, #0A5593 58.82%)
+    /* background-image: linear-gradient(104deg, #34A4FF 2.49%, #0A5593 58.82%) */
+    /* background-image: linear-gradient(104deg, #34A4FF 2.49%, #3b82f6 50%, #0A5593 88.82%) */
+    background-image: linear-gradient(104deg, #34A4FF 2.49%, #3b82f6 30%, #0A5593 80%)
 }
 
 .button-colour {

@@ -1,13 +1,105 @@
 ---
-
+import Card from "./ui/cardInfo.astro";
+import "./services.css";
 ---
 
-<div class="mt-16 md:mt-0">
-    <h2 class="text-[#1269b0] text-4xl lg:text-5xl font-bold lg:tracking-tight">
-        Nuestros Servicios
-    </h2>
-    <p class="text-lg mt-4 text-slate-600">
-        Astro comes batteries included. It takes the best parts of
-        state-of-the-art tools and adds its own innovations.
-    </p>
-</div>
+<section>
+    <div class="bg-white">
+        <div
+            class="py-16 lg:max-w-[1366px] lg:mr-auto lg:ml-auto lg:gap-8 lg:items-center px-4 lg:px-16"
+        >
+            <h2
+                class="text-[#1269b0] text-4xl lg:text-5xl font-bold lg:tracking-tight"
+            >
+                Nuestros Servicios
+            </h2>
+            <div class="flex gap-7 flex-col md:flex-row">
+                <div class="w-full">
+                    <p class="text-lg mt-4 text-slate-600">
+                        <span class="font-bold"
+                            >Somos especialistas en la detección y reparación de
+                            fugas
+                        </span> de agua visibles y ocultas, todo esto gracias a nuestros
+                        instrumentos profesionales, sin la necesidad de romper la
+                        infraestructura del hogar. <span class="font-bold"
+                            >Además de detección de agua, detectamos fugas de
+                            gas.</span
+                        >
+                        <br />
+                        <br />También contamos con servicios de Gasfitería como
+                        mantención e instalación de todo tipo de calefonts.
+                    </p>
+
+                    <p class="text-gradient-green mt-3 text-[24px] font-bold">
+                        ¡Contamos con servicio hacia toda la Región
+                        Metropolitana!
+                    </p>
+                </div>
+
+                <div class="flex flex-col w-auto lg:w-[70%]">
+                    <div class="flex gap-4">
+                        <Card class="!bg-[#f6f9fc]">
+                            <svg
+                                fill="#4ca48e"
+                                height="100px"
+                                width="100px"
+                                version="1.1"
+                                id="Capa_1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 611.999 611.999"
+                                xml:space="preserve"
+                                stroke="#4ca48e"
+                                ><g id="SVGRepo_bgCarrier" stroke-width="0"
+                                ></g><g
+                                    id="SVGRepo_tracerCarrier"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"></g><g
+                                    id="SVGRepo_iconCarrier"
+                                >
+                                    <g>
+                                        <path
+                                            d="M216.02,611.195c5.978,3.178,12.284-3.704,8.624-9.4c-19.866-30.919-38.678-82.947-8.706-149.952 c49.982-111.737,80.396-169.609,80.396-169.609s16.177,67.536,60.029,127.585c42.205,57.793,65.306,130.478,28.064,191.029 c-3.495,5.683,2.668,12.388,8.607,9.349c46.1-23.582,97.806-70.885,103.64-165.017c2.151-28.764-1.075-69.034-17.206-119.851 c-20.741-64.406-46.239-94.459-60.992-107.365c-4.413-3.861-11.276-0.439-10.914,5.413c4.299,69.494-21.845,87.129-36.726,47.386 c-5.943-15.874-9.409-43.33-9.409-76.766c0-55.665-16.15-112.967-51.755-159.531c-9.259-12.109-20.093-23.424-32.523-33.073 c-4.5-3.494-11.023,0.018-10.611,5.7c2.734,37.736,0.257,145.885-94.624,275.089c-86.029,119.851-52.693,211.896-40.864,236.826 C153.666,566.767,185.212,594.814,216.02,611.195z"
+                                        ></path>
+                                    </g>
+                                </g></svg
+                            >
+                            <p class="text-lg mt-4 text-slate-600">
+                                Gasfitería
+                            </p>
+                        </Card>
+                        <Card class="!bg-[#f6f9fc] items-center">
+                            <svg
+                                width="100px"
+                                height="100px"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                ><g id="SVGRepo_bgCarrier" stroke-width="0"
+                                ></g><g
+                                    id="SVGRepo_tracerCarrier"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"></g><g
+                                    id="SVGRepo_iconCarrier"
+                                >
+                                    <g id="Environment / Water_Drop">
+                                        <path
+                                            id="Vector"
+                                            d="M16.0001 13.3848C16.0001 14.6088 15.526 15.7828 14.6821 16.6483C14.203 17.1397 13.6269 17.5091 13 17.7364M19 13.6923C19 7.11538 12 2 12 2C12 2 5 7.11538 5 13.6923C5 15.6304 5.7375 17.4893 7.05025 18.8598C8.36301 20.2302 10.1436 20.9994 12.0001 20.9994C13.8566 20.9994 15.637 20.2298 16.9497 18.8594C18.2625 17.4889 19 15.6304 19 13.6923Z"
+                                            stroke="#4ca48e"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                    </g>
+                                </g></svg
+                            >
+                            <p class="text-lg mt-4 text-slate-600">
+                                Detección de Fugas de Agua y Gas
+                            </p>
+                        </Card>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
